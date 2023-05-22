@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Manuel Guerra</title>
+    <!-- con este link para importar el fonts es suficiente -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- El Header no debe ir dentro de la etiqueta <main> -->
+    <header>
+        <div class="header-left">
+            <!-- No colocaste el atributo alt para colocar una descripción de la imagen -->
+            <img
+                src="https://static.wixstatic.com/media/2e1127_392b27ef188e4f25ae65c0b035f56176~mv2.png/v1/fill/w_112,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/eidoslogo.png">
+        </div>
+        <div class="header-right">
+            <a href="#foto"><h3>inicio</h3></a>
+            <a href="#contactos"><h3>contacto</h3></a> 
+        </div>
+    </header>
+    <main>
+        <section id="foto">
+            <!-- No colocaste el atributo alt para colocar una descripción de la imagen -->
+            <img src="img/pexels.jpg" class="portada">
+        </section>
+        <section id="presentacion">
+            <h2>Hola! soy Jose</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corrupti dolorem quisquam distinctio
+                    provident ipsa. Cumque accusantium maiores molestiae facilis in veniam optio quod ipsa a provident
+                    quia magnam non dolores repellendus tenetur corrupti fugit voluptates, vel minima quos eum nobis!
+                    Qui aperiam voluptas natus, ut illo incidunt ex suscipit autem eum laborum facilis possimus, harum
+                    inventore. Iusto vel eius, corrupti aspernatur ea ipsa saepe soluta, quibusdam, earum nisi totam?
+                </p>
+            </article>
+            <!-- No es necesario que hagas un <section> solo para el botón porque realmente no es una seccion. No colocaste el archivo de tu CV para poder descargarlo con el botón-->
+            <div id="boton">
+                <a href="">Descarga mi cv</a>
+            </div>
+        </section>
+        <section id="caja">
+            <h2>Hablemos</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore odit, accusamus magni
+                    corporis quisquam quidem suscipit eum at rem dolor qui optio ratione quis repellendus veritatis
+                    nostrum adipisci commodi quaerat recusandae provident dolorem tenetur. Soluta ullam quis quod.
+                </p>
+            </article>
+        </section>
+        <section id="contactos">
+            <!-- la etiqueta para las listas desordenadas es <ul></ul> no <lu> -->
+            <!-- <lu> -->
+            <ul>
+                <li>
+                    <!-- debian ser links que llevaran a estas páginas no imagenes estáticas -->
+                    <!-- <img src="img/github.png" class="git"> -->
+                    <a href="https://ar.linkedin.com/" target="_blank"><img src="img/github.png" class="git"></a>
+                </li>
+                <li>
+                    <!-- <img src="img/linkedin.png" class="linked"> -->
+                    <a href="https://github.com/" target="_blank"><img src="img/linkedin.png" class="linked"></a>
+                </li>
+                <li>
+                    <a href="mailto:cuenta@deemail.com"><img src="img/mail.png" class="mail"></a>
+                    <!-- <img src="img/mail.png" class="mail"> -->
+                </li>
+
+            <!-- </lu> -->
+            </ul>
+        </section>
+    </main>
+    <!-- el footer debe ir dentro de la etiqueta <body> no afuera -->
+    <footer>
+        <!-- Debe ir dentro de una etiqueta -->
+        <p>codigo latam</p>
+    </footer>
+</body>
+
+</html>
