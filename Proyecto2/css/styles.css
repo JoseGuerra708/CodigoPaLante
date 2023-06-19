@@ -1,0 +1,226 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+h1 {
+    font-size: 36px;
+  }
+
+  h2, h3 {
+    text-align: center;
+  font-size: 28px;
+}
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+header {
+    
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  box-shadow: inset 0px 0px 17px 0px rgb(0 0 0 / 50%);
+  justify-content: space-around;
+  align-items:center;
+  max-width: 100%;
+  background-color: darkgray;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+    margin: auto;
+    background: linear-gradient(#fefefe, #888888);
+    padding-top: 150px;
+}
+  .logoJG {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 35%;
+  }
+  .header-left {
+    display: flex;
+    flex: 1;
+  }
+  
+  .header-right {
+    display: flex;
+    flex: 1;
+    padding: 0px;
+  }
+  .header-right h3:first-child {
+    margin: 20px;
+  }
+li.menu-item:hover,
+li.menu-item.active,
+a.btn.hover {
+  background: #fefefe;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+}
+
+
+  .portada{
+    border-radius: 50%;
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+}
+  
+#foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;  
+}
+article{
+    text-align: justify;
+    margin: 1px;
+    padding: 0 40px 40px;
+    justify-content: center;
+}
+#presentacion {
+  width: 100%;
+}
+#boton {
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 210px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px; 
+    color: rgb(255, 255, 255);
+  }
+  #boton:hover {
+    transform: scale(1.1.2);
+  }
+ 
+  #caja {
+    margin: 90px 40px 90px 40px;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px; 
+    color: white;
+}
+#caja h2 {
+  padding-top: 20px;
+}
+.linked,.mail,.git{
+    height: 60px;
+    width: 60px;
+}
+
+#contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contactos li {
+        float: left;
+        margin: 10px;
+  }
+
+  #modo-fiesta {
+    border-radius: 50%;
+    height: 80px;
+    background-color: black;
+    color:#fefefe
+  }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+  }
+/* Para quitar los puntos a los items de listas */
+li {
+    list-style: none;
+}
+
+/* mobile */
+section {
+  display: flex;
+  flex-direction: column;
+ }
+ h1 {
+  font-size: 36px;
+ }
+ /* desktop */
+
+@media (min-width: 1024px) {
+  main  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #foto {
+    flex: 1;
+  }
+  #presentacion {
+    flex: 2;
+    padding-left: 20px; 
+  }
+
+  section:not(#foto):not(#presentacion) {
+    width: 90%;
+    margin-top: 40px; 
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+  h1 {
+  font-size: 42px;
+  }
+  
+  .party-mode {
+    animation: partyAnimation 1s infinite;
+  }
+  
+  @keyframes partyAnimation {
+    0% { background: red; }
+    25% { background: yellow; }
+    50% { background: green; }
+    75% { background: blue; }
+  }
+
+  .cuerpo {
+    background-color: inherit; 
+  }
+ 
